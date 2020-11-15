@@ -3,8 +3,7 @@
   <a class='main-header-room-name'>  <%= @room.name %> </a>
   </div>
   <div class='delete-room'>
-    <a href="#" class='delete-room-btn'></a>
-    <%= link_to 'チャットを終了する', room_path(@room) , method: :delete %>
+    <%= link_to 'チャットを終了する', room_path(@room) , method: :delete, class: 'delete-room-btn' %>
   </div>
 </div>
 <div class='main-messages'>
