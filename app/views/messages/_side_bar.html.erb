@@ -1,5 +1,5 @@
 <div class='side-header'>
-  <a href="#" class='user-name'>Tom</a>
+    <%= link_to "#{current_user.name}", edit_user_path(current_user), class: "user-name" %>
   <a href="#" class='create-room'>チャットを作成</a>
 </div>
 <div class='side-rooms'>
