@@ -44,6 +44,7 @@
 
 .side-room-name{
   color: white;
+  text-decoration: none;
 }
 
 /* メイン部分 */
@@ -84,7 +85,7 @@
 
 .main-messages{
   background-color: #fafafa;
-  height: calc(100% - 190px); 
+  height: calc(100% - 190px);
   padding-top: 46px;
   padding: 0 40px;
   overflow: scroll;
@@ -155,4 +156,8 @@
 
 .hidden{
   display: none;
+}
+
+.field_with_errors {
+  display: contents;
 }
