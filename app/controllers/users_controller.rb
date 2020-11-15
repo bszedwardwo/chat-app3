@@ -2,6 +2,9 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def destroy
+  end
+
   def update
     current_user.update(user_params)
     if current_user.save
