@@ -7,20 +7,7 @@
   </div>
 </div>
 <div class='main-messages'>
-  <div class='main-message'>
-    <div class='uppar-contents'>
-      <div class='message-user-name'>Tom</div>
-      <div class='message-create-date'>2020/3/3</div>
-    </div>
-    <div class='down-contents'>おはよう</div>
-  </div>
-  <div class='main-message'>
-    <div class='uppar-contents'>
-      <div class='message-user-name'>cary</div>
-      <div class='message-create-date'>2020/3/3</div>
-    </div>
-    <div class='down-contents'>こんばんは</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %>
 </div>
 <div class='main-form'>
   <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
